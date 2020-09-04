@@ -1,0 +1,14 @@
+[Unit]
+Description = Provide service
+After = network.target
+StartLimitIntervalSec = 0
+
+[Service]
+Type = simple
+Restart = always
+RestartSec = 1
+User = root
+ExecStart = /usr/bin/env php /var/www/example.com/html/index.php
+
+[Install]
+WantedBy = multi-user.target
