@@ -8,11 +8,11 @@ $pid = pcntl_fork();
 
 if ($pid == -1) {
 
-    die('ERROR to make fork process' . PHP_EOL);
+    die('ERROR! to make fork process' . PHP_EOL);
 
 } elseif ($pid) {
 
-    die('OK Destroy parent process' . PHP_EOL);
+    die('OK! Destroy parent process' . PHP_EOL);
 
 } else {
 
