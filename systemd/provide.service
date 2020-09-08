@@ -1,5 +1,5 @@
 [Unit]
-Description = Provide service
+Description = Provide service starter
 After = network.target
 StartLimitIntervalSec = 0
 
